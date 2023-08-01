@@ -1,0 +1,172 @@
+*{
+    margin: 0 ;
+    padding:0 ;
+    font-family : sans-serif;
+  }
+  
+  .container{
+    background-image: radial-gradient(   rgb(126, 154, 231) , rgb(0, 62, 120) );
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .title{
+    font-size: 85px;
+    color: white;
+    animation: flipTitle;
+  }
+
+@keyframes flipTitle {
+
+    from {
+        transform: rotatex(90deg);
+    }
+    to{
+        transform: rotatex(0deg);
+    }
+}
+
+  .containerInput{
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 15px;
+    display: flex;
+    box-shadow: 1px 3px 8px black;
+    margin-bottom: 50px;
+    width: 500px;
+    justify-content: space-around;
+  }
+
+  .containerInput input{
+    background-color:transparent;
+    border:0;
+    font-size:20px;
+    color:rgb(255, 255, 255);
+    outline: none;
+    margin-right: 8px;
+    
+  }
+
+  .containerInput input ::placeholder{
+    color: rgba(240, 248, 255, 0.496);
+  }
+  
+  
+  .buttonSearch{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border:0;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5 s;
+  
+  }
+  .buttonSearch:hover{
+    transform: scale(1.2);
+  }
+
+  .main{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.674);
+    border-radius: 10px;
+    box-shadow: inset;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main h2{
+    margin: 16px 0 ;
+    font-size: 39px;
+  }
+  .main span{
+
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  
+  @media (max-width:720px) {
+    
+    .title{
+        font-size: 60px;
+    
+    }
+    .main h2{
+        font-size: 20px;
+    }
+    .main{
+        width: 400px;
+        min-height: 250px;
+    }
+  }
+  @media (max-width:620px) {
+    
+    .title{
+        font-size: 50px;
+    
+    }
+    .main h2{
+        font-size: 20px;
+    }
+    .main{
+        width: 300px;
+        min-height: 250px;
+    }
+  }
+  @media (max-width:580px) {
+    
+    .title{
+        font-size: 50px;
+    
+    }
+    .main h2{
+        font-size: 20px;
+    }
+    .main{
+        width: 300px;
+        min-height: 250px;
+    }
+    .containerInput{
+        width: 360px;
+    }
+  }
+
+  @media (max-width:480px) {
+    
+    .title{
+        font-size: 40px;
+    
+    }
+    .main h2{
+        font-size: 20px;
+    }
+    .main{
+        width: 380px;
+        min-height: 250px;
+    }
+    .containerInput{
+        width: 300px;
+    }
+  }
+
+  @media (max-width:400px) {
+    .main{
+        width: 300px;
+        min-height: 250px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .containerInput{
+        width: 290px;
+    }
+    
+  }
